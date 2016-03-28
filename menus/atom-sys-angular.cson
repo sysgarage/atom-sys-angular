@@ -1,0 +1,25 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  '.tree-view .directory > .header': [
+    {
+      label: 'SysAngular',
+      submenu: [
+        {
+          label: 'Generate Module',
+          command: 'atom-sys-angular:generate-module'
+        },
+        {
+          label: 'Generate Controller',
+          command: 'atom-sys-angular:generate-controller'
+        },
+        {
+          label: 'Generate Directive',
+          command: 'atom-sys-angular:generate-directive'
+        },
+        {
+          label: 'Generate Service',
+          command: 'atom-sys-angular:generate-service'
+        }
+      ]
+    }
+  ]
