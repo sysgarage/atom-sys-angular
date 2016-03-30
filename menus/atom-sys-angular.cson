@@ -17,6 +17,10 @@
           command: 'atom-sys-angular:generate-directive'
         },
         {
+          label: 'Create Route',
+          command: 'atom-sys-angular:generate-route'
+        },
+        {
           label: 'Create Service',
           command: 'atom-sys-angular:generate-service'
         }
