@@ -3,10 +3,15 @@
   "main": "./lib/atom-sys-angular",
   "version": "0.0.0",
   "description": "Atom package for sys-angular Yeoman generator",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-sys-angular:generate"
+    "atom-workspace": [
+      "atom-sys-angular:generate-module",
+      "atom-sys-angular:generate-controller",
+      "atom-sys-angular:generate-directive",
+      "atom-sys-angular:generate-route",
+      "atom-sys-angular:generate-service"
+    ]
   },
   "repository": "https://github.com/sysgarage/atom-sys-angular",
   "license": "MIT",
@@ -14,5 +19,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "generator-sys-angular": "^0.1.3"
   }
 }
