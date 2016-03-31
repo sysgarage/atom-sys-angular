@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
-    "generator-sys-angular": "^0.1.3"
+    "generator-sys-angular": "^0.1.3",
+    "yeoman-environment": "^1.5.2"
   }
 }
