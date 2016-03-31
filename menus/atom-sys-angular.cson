@@ -5,23 +5,23 @@
       label: 'SysAngular',
       submenu: [
         {
-          label: 'Create Module',
+          label: 'New Module',
           command: 'atom-sys-angular:generate-module'
         },
         {
-          label: 'Create Controller',
+          label: 'New Controller',
           command: 'atom-sys-angular:generate-controller'
         },
         {
-          label: 'Create Directive',
+          label: 'New Directive',
           command: 'atom-sys-angular:generate-directive'
         },
         {
-          label: 'Create Route',
+          label: 'New Route',
           command: 'atom-sys-angular:generate-route'
         },
         {
-          label: 'Create Service',
+          label: 'New Service',
           command: 'atom-sys-angular:generate-service'
         }
       ]
