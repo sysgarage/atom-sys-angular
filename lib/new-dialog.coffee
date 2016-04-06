@@ -3,9 +3,10 @@ Dialog = require './dialog'
 module.exports =
 class NewDialog extends Dialog
 
-  constructor: (type, cb) ->
+  constructor: (type, cb, options) ->
     this.type = type
     this.cb = cb
+    this.options = options
     input = 'sys-' + type
 
     super
@@ -20,7 +21,7 @@ class NewDialog extends Dialog
       properties =
         input: input
 
-      this.cb(input)
+      this.cb(input, this.options)
 
       @close()
     else
