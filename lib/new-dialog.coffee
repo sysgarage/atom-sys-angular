@@ -3,25 +3,25 @@ Dialog = require './dialog'
 module.exports =
 class NewDialog extends Dialog
 
-  constructor: (type, cb, options) ->
+  constructor: (type, cb) ->
     this.type = type
     this.cb = cb
-    this.options = options
-    input = 'sys-' + type
 
     super
       prompt: 'Enter name of ' + this.type
-      input: input
+      input: ''
       select: true
       iconClass: 'icon-arrow-right'
 
+  showDialog: (folderPath) ->
+    this.folderPath = folderPath
+    @attach()
 
   onConfirm: (input) ->
     if input
       properties =
         input: input
-
-      this.cb(input, this.options)
+      this.cb(input, this.folderPath)
 
       @close()
     else
