@@ -1,7 +1,7 @@
 {
   "name": "atom-sys-angular",
   "main": "./lib/atom-sys-angular",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Atom package for sys-angular Yeoman generator",
   "keywords": [],
   "activationCommands": {
