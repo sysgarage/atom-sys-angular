@@ -13,15 +13,15 @@ class NewDialog extends Dialog
       select: true
       iconClass: 'icon-arrow-right'
 
-  showDialog: (folderPath) ->
-    this.folderPath = folderPath
+  showDialog: (ev) ->
+    this.ev = ev
     @attach()
 
   onConfirm: (input) ->
     if input
       properties =
         input: input
-      this.cb(input, this.folderPath)
+      this.cb(input, this.ev)
 
       @close()
     else
