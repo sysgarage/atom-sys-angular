@@ -1,7 +1,7 @@
 {
   "name": "atom-sys-angular",
   "main": "./lib/bootstrapper",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Atom package for sys-angular Yeoman generator",
   "keywords": [],
   "activationCommands": {
